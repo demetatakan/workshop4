@@ -37,7 +37,6 @@ public class register
 
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("document.getElementById('endUserLicenceAgreement').click();");
-
         driver.findElement(By.id("signUpButton")).click();
 
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("confirmSubmit")));
