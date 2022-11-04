@@ -1,3 +1,4 @@
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -7,29 +8,35 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
-
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.AfterEach;
 import java.util.concurrent.TimeUnit;
 
 public class corporate
 {
-    /*
+    ChromeDriver driver;
+
     @BeforeEach
     public void beforeEach()
     {
         System.setProperty("webdriver.chrome.driver", "/Users/demet.atakan/Desktop/chromedriver");
+        WebDriverWait wait = new WebDriverWait(driver, 30);
+        driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
+        driver.manage().window().maximize();
     }
 
     @AfterEach
     public void afterEach()
     {
+
         driver.quit();
     }
-    */
+
 
     @Test
     public void cssRegister()
     {
-        System.setProperty("webdriver.chrome.driver", "/Users/demet.atakan/Desktop/chromedriver");
+       System.setProperty("webdriver.chrome.driver", "/Users/demet.atakan/Desktop/chromedriver");
         WebDriver driver = new ChromeDriver();
         WebDriverWait wait = new WebDriverWait(driver, 30);
         driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
