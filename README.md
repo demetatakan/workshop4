@@ -2,7 +2,7 @@
 
 This document will enable you to run through the details of each testcases and how to run it in your local.
 
-###POMLoginTest Class- (Login sayfası testi)
+### POMLoginTest Class- (Login sayfası testi)
 
 Test1
 * Anasayfadan login linkine tıklar. Login ekranında input alanlarına kullanıcı adı ve şifre girişi yapmadan login butonuna tıklar ve ‘e-posta adresinizi ve kullanıcı adınızı girin’ mesajının geldiğini kontrol eder.
@@ -14,7 +14,7 @@ Test2
 * Anasayfadan login linkine tıklar, 
 geçerli username ve şifre girişi yaparak login olunabildiğini kontrol eder.
 
-###POMTestClass- (Arama test)
+### POMTestClass- (Arama test)
 
 Anasayfadan ‘Otomobil’ linkine tıklar.
 Tüm otomobil linkine tıklar,
@@ -22,7 +22,7 @@ Tüm otomobil linkine tıklar,
 Listedeki ilk ilanın ilan başlığı, km ve ücretini alarak ilanın detayına gider ve bu bilgileri eşleyerek doğruluğunu kontrol eder.
 
 
-###POMNewClassified- (İlan verme testi)
+### POMNewClassified- (İlan verme testi)
 
 Anasayfadan login linkine tıklayıp login olur,
 Bana özel sayfasından yeni ilan vermeye tıklar,
@@ -42,7 +42,7 @@ Tüm testleri çalıştırmak isterseniz:
 mvn surefire:test -Dtest=POMLoginTest,POMNewClassifieldTest,POMTestClass
 ```
 
-###Some Notes
+### Some Notes
 Eğitim videolarının tekrar üzerinden geçilip testler POM modele uygun şekilde yazmaya çalışılmıştır.
 Testler şuan TB186da çalışmaktadır. TB değişikliği yapmak isterseniz BaseClass içerisinden setCookieTb metodu içinde değişiklik yaparak uygulayabilirsiniz.
 
