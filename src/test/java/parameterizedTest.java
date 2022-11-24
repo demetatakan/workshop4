@@ -13,7 +13,8 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
-import static org.testng.AssertJUnit.assertTrue;
+
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class parameterizedTest
 {

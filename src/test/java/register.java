@@ -1,11 +1,13 @@
+import org.apache.hc.core5.util.Asserts;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
-import org.testng.annotations.Test;
+
 
 public class register
 {
@@ -19,7 +21,7 @@ public class register
         Thread.sleep(1000);
         String ActualTitle = driver.getTitle();
         String ExpectedTitle = "Hesap Aç";
-        Assert.assertEquals(ExpectedTitle, ActualTitle);
+        Assertions.assertEquals(ExpectedTitle,ActualTitle);
     }
 
     @Test
